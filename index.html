@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jajan Tika – Warung Mbak Seh | Ciputat, Tangsel</title>
+  <meta name="description"
+    content="Jajan Tika – Warung Mbak Seh, jajanan enak dan segar di Ciputat Tangsel. Piscok Lumer, Risol Mayo, Es Jelly, dan masih banyak lagi!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.png" alt="Jajan Tika Logo" class="logo-img" />
+        <span class="logo-text">Jajan <strong>Tika</strong></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#testimoni">Ulasan</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20jajanan%20dong%21"
+            target="_blank" class="btn-nav">Pesan Sekarang 🛒</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="hero-badge">🍫 Jajanan Favorit Ciputat</span>
+        <h1 class="hero-title">Gurih, Manis,<br /><span class="highlight">Bikin Nagih!</span></h1>
+        <p class="hero-sub">Warung Mbak Seh – Jagonya jajanan krispi & lumer. Dari Piscok hingga Salad Jelly, semua
+          disajikan fresh dengan rasa yang bikin balik lagi!</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-primary">Cek Menu Baru ↓</a>
+          <a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20jajanan%20dong%21"
+            target="_blank" class="btn-secondary">Order via WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Varian Utama</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">9+</span><span class="stat-label">Pilihan Topping</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">⭐ 4.9</span><span class="stat-label">Rating Pembeli</span></div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-img-circle">
+          <img src="assets/hero_bg.png" alt="Jajanan Enak Jajan Tika" />
+        </div>
+        <div class="floating-badge f1">🔥 Best Seller</div>
+        <div class="floating-badge f2">🧀 Keju Lumer</div>
+        <div class="floating-badge f3">❄️ Segar Banget</div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FDF6EE" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="whyus" id="whyus">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">🍌</div>
+          <h3>Bahan Fresh</h3>
+          <p>Pisang & bahan pilihan, fresh tiap hari. Ga ada yang kemarin-kemarin!</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">💰</div>
+          <h3>Harga Ramah</h3>
+          <p>Mulai dari Rp 2.000-an, jajan kenyang nggak perlu kantong bolong!</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">⚡</div>
+          <h3>Proses Cepat</h3>
+          <p>Digoreng langsung, panas & renyah. Ga perlu nunggu lama!</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">🚚</div>
+          <h3>Bisa Diantar</h3>
+          <p>Pesan via WhatsApp, bisa diantar ke area sekitar Ciputat!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">Menu Kami</span>
+        <h2>Pilihan <span class="text-brown">Jajanan Favorit</span></h2>
+        <p>Semua dibuat dengan cinta & bahan terbaik buat kamu!</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="goreng">🍳 Goreng</button>
+        <button class="filter-btn" data-filter="minuman">🧋 Minuman</button>
+        <button class="filter-btn" data-filter="snack">🍿 Snack</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+
+        <div class="menu-card reveal" data-category="goreng">
+          <div class="menu-img-wrap">
+            <img src="assets/piscok_lumer.png" alt="Piscok Lumer" loading="lazy" />
+            <span class="menu-badge-hot">🔥 Best Seller</span>
+          </div>
+          <div class="menu-info">
+            <h3>Piscok Lumer</h3>
+            <p>Pisang goreng coklat lumer premium, renyah di luar dan meleleh di dalam!</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 10.000</span>
+              <a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20Piscok%20Lumer!"
+                target="_blank" class="btn-order">Pesan →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="goreng">
+          <div class="menu-img-wrap">
+            <img src="assets/pisang_krispi.png" alt="Pisang Krispi" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h3>Pisang Krispi</h3>
+            <p>Pisang goreng nugget dengan balutan tepung krispi yang gurih dan nagih!</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 10.000</span>
+              <a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20Pisang%20Krispi!"
+                target="_blank" class="btn-order">Pesan →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="goreng">
+          <div class="menu-img-wrap">
+            <img src="assets/keju_aroma.png" alt="Keju Aroma" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h3>Keju Aroma</h3>
+            <p>Jajanan keju goreng harum menggoda, gurih & crispy yang bikin ketagihan!</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 10.000</span>
+              <a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20Keju%20Aroma!"
+                target="_blank" class="btn-order">Pesan →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="minuman">
+          <div class="menu-img-wrap">
+            <img src="assets/salad_jelly.png" alt="Salad Jelly" loading="lazy" />
+            <span class="menu-badge-hot">❄️ Segar</span>
+          </div>
+          <div class="menu-info">
+            <h3>Salad Jelly</h3>
+            <p>Jelly pelangi dengan saus creamy yang manis dan menyegarkan hari kamu!</p>
+            <div class="menu-footer">
+              <span class="menu-price">Rp 7.000</span>
+              <a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20Salad%20Jelly!"
+                target="_blank" class="btn-order">Pesan →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ========== TOPPINGS SECTION ========== -->
+      <div class="toppings-container reveal">
+        <div class="toppings-box">
+          <div class="topping-header">
+            <span class="t-badge">Pilihan Rasa</span>
+            <h3>Custom Jajananmu!</h3>
+            <p>Topping boleh MIX (Minimal 2 Rasa)</p>
+          </div>
+          <div class="flavor-grid">
+            <div class="flavor-item">🍫 Coklat</div>
+            <div class="flavor-item">🍓 Strawberry</div>
+            <div class="flavor-item">🍵 Tiramisu</div>
+            <div class="flavor-item">🟣 Taro</div>
+          </div>
+        </div>
+
+        <div class="toppings-box extra-box">
+          <div class="topping-header">
+            <span class="t-badge">Extra Topping</span>
+            <h3>Biar Makin Mantap</h3>
+          </div>
+          <div class="extra-list">
+            <div class="extra-item"><span>🧀 Keju</span> <strong>+2K</strong></div>
+            <div class="extra-item"><span>🍪 Oreo</span> <strong>+2K</strong></div>
+            <div class="extra-item"><span>🍫 Chocochips</span> <strong>+2K</strong></div>
+            <div class="extra-item"><span>🍩 Meses</span> <strong>+1K</strong></div>
+            <div class="extra-item"><span>🌈 Sprinkle</span> <strong>+1K</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TENTANG ========== -->
+  <section class="tentang" id="tentang">
+    <div class="container tentang-flex">
+      <div class="tentang-img reveal">
+        <div class="img-stack">
+          <img src="assets/hero_bg.png" alt="Warung Mbak Seh" class="img-main" />
+          <div class="img-decor"></div>
+        </div>
+        <div class="tentang-badge-wrap">
+          <div class="tentang-badge">
+            <span class="tb-num">3+</span>
+            <span class="tb-label">Tahun Berjualan</span>
+          </div>
+        </div>
+      </div>
+      <div class="tentang-text reveal">
+        <span class="section-badge">Tentang Kami</span>
+        <h2>Warung Mbak Seh,<br /><span class="text-brown">Jajanan dengan Hati</span></h2>
+        <p>Bermula dari hobi memasak dan keinginan menyajikan jajanan enak untuk keluarga, Warung Mbak Seh kini hadir
+          untuk melayani warga Ciputat dan sekitarnya.</p>
+        <p>Dengan bahan-bahan pilihan yang fresh setiap hari, kami berkomitmen menyajikan jajanan yang tidak hanya enak,
+          tapi juga aman dan higienis.</p>
+        <ul class="tentang-list">
+          <li>✅ Bahan fresh, digoreng langsung</li>
+          <li>✅ Harga terjangkau untuk semua kalangan</li>
+          <li>✅ Tersedia berbagai pilihan topping & rasa</li>
+          <li>✅ Bisa pesan via WhatsApp & diantar</li>
+        </ul>
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="btn-secondary">Follow Instagram
+          Kami 📸</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONI ========== -->
+  <section class="testimoni" id="testimoni">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">Ulasan Pelanggan</span>
+        <h2>Kata Mereka yang Sudah <span class="text-brown">Merasakan</span></h2>
+      </div>
+      <div class="testi-track-wrap">
+        <div class="testi-track" id="testi-track">
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Piscok lumernya enak banget, coklat sama kejunya pas! Sering beli tiap pulang sekolah."</p>
+            <div class="testi-author"><span class="testi-avatar">👧</span><strong>Dinda R.</strong></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Harganya murah banget tapi enak. Anak-anak saya suka banget sama es jelly mangga-nya!"</p>
+            <div class="testi-author"><span class="testi-avatar">👩</span><strong>Ibu Sari</strong></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Risol mayo-nya crispy banget dan isiannya banyak. Recommended banget buat yang suka jajan!"</p>
+            <div class="testi-author"><span class="testi-avatar">👦</span><strong>Reza A.</strong></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Pelayanannya ramah, pesanan cepat. Piscok lumernya enak, langsung rebuy!"</p>
+            <div class="testi-author"><span class="testi-avatar">👩‍🦱</span><strong>Mega L.</strong></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Keju aromanya gurih dan renyah banget, cocok buat ngemil sore. Harga pelajar banget!"</p>
+            <div class="testi-author"><span class="testi-avatar">🧒</span><strong>Faiz M.</strong></div>
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Piscok lumernya enak banget, coklat sama kejunya pas! Sering beli tiap pulang sekolah."</p>
+            <div class="testi-author"><span class="testi-avatar">👧</span><strong>Dinda R.</strong></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Harganya murah banget tapi enak. Anak-anak saya suka banget sama es jelly mangga-nya!"</p>
+            <div class="testi-author"><span class="testi-avatar">👩</span><strong>Ibu Sari</strong></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Risol mayo-nya crispy banget dan isiannya banyak. Recommended banget buat yang suka jajan!"</p>
+            <div class="testi-author"><span class="testi-avatar">👦</span><strong>Reza A.</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSTAGRAM FEED ========== -->
+  <section class="ig-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">Instagram</span>
+        <h2>Ikuti Kami di <span class="text-brown">@jajantika_official</span></h2>
+        <p>Update menu terbaru, promo, dan konten seru setiap hari!</p>
+      </div>
+      <div class="ig-grid reveal">
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="ig-item">
+          <img src="assets/piscok_lumer.png" alt="Instagram Jajan Tika" />
+          <div class="ig-overlay"><span>📸 Lihat di IG</span></div>
+        </a>
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="ig-item">
+          <img src="assets/pisang_keju.png" alt="Instagram Jajan Tika" />
+          <div class="ig-overlay"><span>📸 Lihat di IG</span></div>
+        </a>
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="ig-item">
+          <img src="assets/risol_mayo.png" alt="Instagram Jajan Tika" />
+          <div class="ig-overlay"><span>📸 Lihat di IG</span></div>
+        </a>
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="ig-item">
+          <img src="assets/keju_aroma.png" alt="Instagram Jajan Tika" />
+          <div class="ig-overlay"><span>📸 Lihat di IG</span></div>
+        </a>
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="ig-item">
+          <img src="assets/es_jelly_mangga.png" alt="Instagram Jajan Tika" />
+          <div class="ig-overlay"><span>📸 Lihat di IG</span></div>
+        </a>
+        <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="ig-item ig-cta">
+          <div class="ig-cta-inner">
+            <span class="ig-cta-icon">📸</span>
+            <strong>@jajantika_official</strong>
+            <span>Klik untuk Follow!</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOKASI ========== -->
+  <section class="lokasi" id="lokasi">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">Lokasi</span>
+        <h2>Temukan Kami di <span class="text-brown">Ciputat</span></h2>
+      </div>
+      <div class="lokasi-flex">
+        <div class="lokasi-info reveal">
+          <div class="lokasi-card">
+            <div class="lk-icon">📍</div>
+            <div>
+              <h4>Alamat</h4>
+              <p>Jl. Masjid Al-Mubarokah RT 003 RW 003, Kp. Sawah Lama, Kec. Ciputat, Tangsel</p>
+            </div>
+          </div>
+          <div class="lokasi-card">
+            <div class="lk-icon">🕐</div>
+            <div>
+              <h4>Jam Buka</h4>
+              <p>Setiap Hari<br /><strong>08.00 – 21.00 WIB</strong></p>
+            </div>
+          </div>
+          <div class="lokasi-card">
+            <div class="lk-icon">📱</div>
+            <div>
+              <h4>Kontak</h4>
+              <p>WhatsApp: <a href="https://wa.me/6285780372248" target="_blank">0857-8037-2248</a></p>
+              <p>Instagram: <a href="https://www.instagram.com/jajantika_official/"
+                  target="_blank">@jajantika_official</a></p>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/place/Warung+Mbak+Seh/@-6.2985489,106.7291236,17z/data=!4m6!3m5!1s0x2e69f1b62cd5dac5:0x3308670acb6ca7e4!8m2!3d-6.2985447!4d106.7291231!16s%2Fg%2F11j4yxd8gy?hl=id&entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="btn-primary" style="margin-top:1rem;">Buka Google Maps 🗺️</a>
+        </div>
+        <div class="lokasi-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3965.734716944406!2d106.7291236!3d-6.2985489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1b62cd5dac5%3A0x3308670acb6ca7e4!2sWarung%20Mbak%20Seh!5e0!3m2!1sid!2sid!4v1778392462368!5m2!1sid!2sid"
+            width="100%" height="350" style="border:0;border-radius:16px;" allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FLOATING WA BUTTON ========== -->
+  <a href="https://wa.me/6285780372248?text=Halo%20Kak%20Tika%2C%20mau%20pesan%20jajanan%20dong%21" target="_blank"
+    class="wa-float" id="wa-float" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span>Order Sekarang!</span>
+  </a>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Jajan Tika" class="footer-logo" />
+          <p>Warung Mbak Seh – Jajanan enak & segar untuk semua. Bikin hari kamu makin happy!</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/jajantika_official/" target="_blank" class="social-btn">📸 Instagram</a>
+            <a href="https://wa.me/6285780372248" target="_blank" class="social-btn">💬 WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#testimoni">Ulasan</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p>📍 Jl. Masjid Al-Mubarokah RT 003/003, Kp. Sawah Lama, Ciputat, Tangsel</p>
+          <p>📱 0857-8037-2248</p>
+          <p>📸 @jajantika_official</p>
+          <p>🕐 Buka: 08.00 – 21.00 WIB</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Jajan Tika – Warung Mbak Seh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
